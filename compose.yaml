@@ -1,0 +1,11 @@
+
+services:
+  website:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: jk-1st-mini-project
+    ports:
+      - "8081:80"
+    restart: unless-stopped
+
